@@ -10,6 +10,7 @@ const skills = {
   "Frameworks & Libraries": ["Django", "Flask", "AngularJS", "Node.js", "Next.js", "REST APIs"],
   Databases: ["PostgreSQL", "MySQL", "SQLite"],
   "Tools & Platforms": ["Git", "Figma", "Heroku", "Linux", "PostHog"],
+  "Mobile": ["Flutter", "Dart", "iOS", "Android", "Play Store", "App Store"],
 };
 
 const experience = [
@@ -343,12 +344,13 @@ function About() {
           <div className="space-y-4 text-gray-400 leading-relaxed">
             <p>
               I&apos;m a Software Engineer and Product Support professional with a passion for building
-              scalable web applications that solve real problems. Currently, I&apos;m developing a
-              full-stack print shop management system at{" "}
+              scalable web applications that solve real problems. I built and launched the full-stack
+              print shop management system at{" "}
               <a href="https://printduka.co.ke/" className="text-rose-muted hover:text-rose-accent transition-colors" target="_blank" rel="noopener noreferrer">
                 PrintDuka
-              </a>{" "}
-              and supporting product growth at{" "}
+              </a>
+              {" "}— now live and actively used — and continue shipping new features as the product grows. I also support
+              product growth at{" "}
               <a href="https://masaicode.com/" className="text-rose-muted hover:text-rose-accent transition-colors" target="_blank" rel="noopener noreferrer">
                 Masai Code
               </a>.
