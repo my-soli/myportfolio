@@ -40,17 +40,6 @@ const experience = [
       "Automated order workflow from placement to production queue, improving operational efficiency.",
     ],
   },
-  {
-    role: "Tech Support Intern",
-    company: "Administration Police Service HQ",
-    period: "May 2024 – Aug 2024",
-    color: "#9b6080",
-    bullets: [
-      "Provided hardware, software, and network troubleshooting support to office departments.",
-      "Installed and configured desktop systems, managed user accounts, and maintained IT inventory.",
-      "Supported cybersecurity operations including antivirus updates, patching, and monitoring.",
-    ],
-  },
 ];
 
 const projects = [
