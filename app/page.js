@@ -54,12 +54,11 @@ const projects = [
   },
   {
     title: "Resume AI",
-    tag: "SaaS · Coming Soon",
+    tag: "SaaS · Live",
     description:
       "AI-powered resume SaaS platform where users can generate professional resumes, optimize existing ones, and get instant ATS compatibility scores — powered by GROQ.",
     stack: ["Next.js", "GROQ", "AI/ML", "SaaS"],
-    link: null,
-    comingSoon: true,
+    link: "https://aicvbuilder.co.ke/",
     accent: "#c4607a",
   },
   {
