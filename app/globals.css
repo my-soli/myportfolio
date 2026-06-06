@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0b0f;
+  color: #f0eff4;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #13131a;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8829a;
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: #e8829a40;
+  color: #f0b8c8;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #e8829a 0%, #f0b8c8 50%, #c4607a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Rose glow */
+.rose-glow {
+  box-shadow: 0 0 30px rgba(232, 130, 154, 0.15), 0 0 60px rgba(232, 130, 154, 0.05);
+}
+
+.rose-glow-sm {
+  box-shadow: 0 0 15px rgba(232, 130, 154, 0.2);
+}
+
+/* Dotted grid background */
+.dot-grid {
+  background-image: radial-gradient(rgba(232, 130, 154, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(232, 130, 154, 0.12);
+}
+
+/* Skill pill */
+.skill-pill {
+  transition: all 0.25s ease;
+}
+.skill-pill:hover {
+  background: rgba(232, 130, 154, 0.18);
+  color: #f0b8c8;
+  border-color: #e8829a;
+}
+
+/* Section fade-in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline line */
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #e8829a, transparent);
+}
+
+/* Bow decoration SVG inline */
+.bow-decoration {
+  fill: #e8829a;
+  opacity: 0.7;
+}
